@@ -1,0 +1,11 @@
+Compile:
+$ gcc -o set_osc set_osc.c
+
+Usage:
+$ set_osc P DIV
+
+Where 
+  P = [0, 1, 2, 4, 8], a P = 0 will read the DS1077L MUX and DIV.
+  DIV = 2-1025
+  
+The I2C_ADDR is statically coded for 0x58 (DS1077LZ-40+).
